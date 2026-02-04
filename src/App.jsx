@@ -20,12 +20,12 @@ function App() {
       <main className='bg-[#edecec]'>
         <Display></Display>
         <div className='grid md:grid-cols-4 mx-10 md:mx-15 xl:mx-20 pb-8 lg:pb-15 gap-5'>
-          <div className='col-span-3'>
+          <div className='md:col-span-3'>
             <Suspense fallback={<span className="loading loading-spinner loading-xs"></span>}>
               <Tickets ticketsPromise={ticketsPromise}></Tickets>
             </Suspense>
           </div>
-          <div className='col-span-1'>
+          <div className='col-span-full md:col-span-1 w-full'>
             <TicketStatus></TicketStatus>
             <ResolvedTasks></ResolvedTasks>
           </div>

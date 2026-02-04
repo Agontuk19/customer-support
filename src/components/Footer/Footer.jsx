@@ -46,7 +46,7 @@ const Footer = () => {
                 </div>
             </div>
             <hr className='mt-5 text-[#A1A1AA]' />
-            <p className='text-center text-[0.9rem] p-2'>© 2025 CS — Ticket System. All rights reserved.</p>
+            <p className='text-center text-[0.8rem] md:text-[0.9rem] p-2'>© 2025 CS — Ticket System. All rights reserved.</p>
         </div>
     );
 };

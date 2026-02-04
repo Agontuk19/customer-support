@@ -5,7 +5,7 @@ const Ticket = ({ ticket }) => {
     const { id, title, description, customer, priority, status, createdAt } = ticket;
     return (
         <div>
-            <div className='bg-white p-4 rounded-sm space-y-1 h-full'>
+            <div className='bg-white p-4 rounded-sm space-y-1 h-full shadow-md'>
                 <div className='flex justify-between items-center gap-1'>
                     <p>{title}</p>
                     <div className={`flex items-center gap-1 rounded-2xl text-sm py-1 px-2 whitespace-nowrap
