@@ -8,7 +8,7 @@ const Ticket = ({ ticket }) => {
             <div className='bg-white p-4 rounded-sm space-y-1 h-full'>
                 <div className='flex justify-between items-center gap-1'>
                     <p>{title}</p>
-                    <div className={`flex items-center gap-1 rounded-2xl text-sm py-1 px-2 
+                    <div className={`flex items-center gap-1 rounded-2xl text-sm py-1 px-2 whitespace-nowrap
                         ${status === "Open" ? 'bg-[#B9F8CF] text-[#0B5E06]' : 'bg-[#F8F3B9] text-[#9C7700]'}`}>
                         <div className={`w-3 h-3 rounded-full ${status === "Open" ? 'bg-[#02A53B]' : 'bg-[#FEBB0C]'}`}></div>
                         {status}
