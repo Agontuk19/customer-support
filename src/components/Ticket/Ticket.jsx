@@ -1,11 +1,25 @@
 import React from 'react';
 import calImg from '../../assets/calendar.png'
+import { toast } from 'react-toastify';
 
-const Ticket = ({ ticket }) => {
+const Ticket = ({ ticket, statusTasks, setStatusTasks, resolvedTasks }) => {
     const { id, title, description, customer, priority, status, createdAt } = ticket;
+    const updateTask = ({ title }) => {
+        if (statusTasks.includes(title)) {
+            toast("Task is already added.")
+        }
+        else {
+            const updatedStatusTasks = [...statusTasks, title];
+            setStatusTasks(updatedStatusTasks);
+            toast("New Task Added");
+        }
+    }
+    if (resolvedTasks.includes(title)) {
+        return;
+    }
     return (
         <div>
-            <div className='bg-white p-4 rounded-sm space-y-1 h-full shadow-md'>
+            <div onClick={() => updateTask({ title })} className='bg-white p-4 rounded-sm space-y-1 h-full shadow-md'>
                 <div className='flex justify-between items-center gap-1'>
                     <p>{title}</p>
                     <div className={`flex items-center gap-1 rounded-2xl text-sm py-1 px-2 whitespace-nowrap
