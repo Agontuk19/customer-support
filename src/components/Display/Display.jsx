@@ -3,7 +3,7 @@ import bgImg from '../../assets/vector1.png'
 
 const Display = () => {
     return (
-        <div className='flex flex-col md:flex-row justify-center items-center gap-3 mx-10 md:mx-20 py-8 md:py-15'>
+        <div className='flex flex-col md:flex-row justify-center items-center gap-3 mx-10 md:mx-15 xl:mx-20 py-8 lg:py-15'>
             <div className='flex-1 flex flex-col justify-center items-center text-white rounded-lg bg-linear-to-br from-[#632EE3] to-[#9F62F2] relative overflow-hidden h-55 py-5 md:py-0 w-full'>
                 <div className='bg-cover bg-center w-1/2' style={{ backgroundImage: `url(${bgImg})` }}>
                 </div>
